@@ -39,7 +39,7 @@ class Fly {
   void update(double t) {
     if (isDead) {
       /// make the fly fall
-      flyRect = flyRect.translate(0, game.titleSize * 6 * t);
+      flyRect = flyRect.translate(0, game.titleSize * 12 * t);
 
       if (flyRect.top > game.screenSize.height) isOffScreen = true;
     } else {
@@ -67,6 +67,5 @@ class Fly {
 
   void onTapDown() {
     isDead = true;
-    game.spawnFly();
   }
 }

@@ -13,6 +13,7 @@ void main() async {
   await flameUtil.setOrientation(DeviceOrientation.portraitUp);
 
   Flame.images.loadAll(<String>[
+    // resource part 1
     'bg/backyard.png',
     'flies/agile-fly-1.png',
     'flies/agile-fly-2.png',
@@ -29,6 +30,15 @@ void main() async {
     'flies/macho-fly-1.png',
     'flies/macho-fly-2.png',
     'flies/macho-fly-dead.png',
+
+    // resource part 2
+    'bg/lose-splash.png',
+    'branding/title.png',
+    'ui/dialog-credits.png',
+    'ui/dialog-help.png',
+    'ui/icon-credits.png',
+    'ui/icon-help.png',
+    'ui/start-button.png',
   ]);
 
   // BoxGame game = BoxGame();
